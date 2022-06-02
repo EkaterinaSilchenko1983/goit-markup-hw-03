@@ -8,10 +8,15 @@
     --general-background-color: #F5F4FA;
     --secondary-btn-color: #212121;
     
-   
-
 }
 
+p,h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+ul {
+    margin: 0;
+    padding-left: 0;
+}
 
 body {
     color: var(--main-text-color);
@@ -24,6 +29,8 @@ body {
 .link {
     text-decoration: none;
 }
+
+
 
 .visually-hidden {
     position: absolute;
@@ -38,7 +45,17 @@ body {
     margin: -1px;
 }
 
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    outline: 1px solid red;
+
+}
+
 /* ---------------------header--------------------- */
+
 .header {
     background-color: var(--primary-white-color);
 }
