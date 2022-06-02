@@ -25,6 +25,8 @@ body {
 
 .list{
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 .link {
     text-decoration: none;
@@ -45,6 +47,10 @@ body {
     margin: -1px;
 }
 
+
+
+/* ---------------------header--------------------- */
+
 .container {
     width: 1200px;
     padding-left: 15px;
@@ -54,7 +60,7 @@ body {
 
 }
 
-/* ---------------------header--------------------- */
+
 
 .header {
     background-color: var(--primary-white-color);
@@ -111,20 +117,31 @@ color: var(--accent-color);
 }
 
           /*------------------hero--------------------    */
+.hero {
+    text-align: center;
+}
 
 .hero-title {
+    margin-bottom: 40px;
+
     color: var(--primary-white-color);
     background-color: var(--secondary-background-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
+    
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
 .hero-btn {
+    display: inline-block;
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 200px;
+
     color: var(--primary-white-color);
     background-color: var(--accent-color) ;
+
     cursor: pointer;
     font-family: inherit;
     font-weight: 700;
@@ -132,6 +149,7 @@ color: var(--accent-color);
     line-height: 1.88;
     letter-spacing: 0.06em;
     border: none;
+    text-align: center;
 }
 .hero-btn:hover,
 .hero-btn:focus {
