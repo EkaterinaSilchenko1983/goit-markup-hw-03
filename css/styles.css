@@ -120,18 +120,25 @@ color: var(--accent-color);
 }
 
           /*------------------hero--------------------    */
+
+
 .hero {
     text-align: center;
-    
+    background-color: var(--secondary-background-color);
+}
 
+.hero-container {
+    padding: 200px 0;
 }
 
 
 .hero-title {
     margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 630px;
 
     color: var(--primary-white-color);
-    background-color: var(--secondary-background-color);
     
     font-weight: 900;
     font-size: 44px;
@@ -140,6 +147,9 @@ color: var(--accent-color);
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
+
+
+
 .hero-btn {
     display: inline-block;
     border-radius: 4px;
@@ -165,6 +175,14 @@ color: var(--accent-color);
 
      /*--------------------   features----------------   */
 
+.section {
+    background-color: var(--primary-white-color);
+    padding-top: 94px;
+    padding-bottom: 94px;
+} 
+.no-padding {
+    padding-bottom: 0;
+}
 
  .feature-list .title {
     margin-bottom: 10px;
@@ -183,11 +201,7 @@ color: var(--accent-color);
 }
 
      /*-----------------     section -----------------    */
-.section {
-background-color: var(--primary-white-color);
-padding-top: 94px;
-padding-bottom: 94px;
-}
+
 .section-title {
     margin-bottom: 50px;
 
@@ -202,8 +216,24 @@ padding-bottom: 94px;
 }
 .team-item {
     background-color: var(--primary-white-color);
-    text-align: center;
+    
 }
+
+.team-card {
+    text-align: center;
+    padding: 30px 0;
+    width: 270px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-item .title {
+margin-bottom: 10px;
+
+}
+
+
 .team-list .title {
     color: var(--title-text-color);
     font-weight: 500;
