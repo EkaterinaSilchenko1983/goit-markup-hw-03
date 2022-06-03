@@ -47,6 +47,12 @@ body {
     margin: -1px;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 0px;
+}
 
 
 /* ---------------------header--------------------- */
@@ -67,6 +73,8 @@ body {
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: #ECECEC;
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
  .logo {
@@ -216,16 +224,17 @@ color: var(--accent-color);
 }
 .team-item {
     background-color: var(--primary-white-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    
+    border-radius: 0px 0px 4px 4px;
     
 }
 
 .team-card {
+    
     text-align: center;
     padding: 30px 0;
     width: 270px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    
-    border-radius: 0px 0px 4px 4px;
 }
 
 .team-item .title {
@@ -250,12 +259,20 @@ margin-bottom: 10px;
 /* ----------------------footer-------------------- */
 .footer {
     background-color: var(--secondary-background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
+.logo {
+display: inline-block;
+margin-bottom: 20px;
 
+}
 .footer .logo {
     color: var(--primary-white-color);
 }
 .link-address {
+    display: inline-block;
+    margin-bottom: 9px;
     color: var(--primary-white-color);
     font-family: 'Roboto';
     font-style: normal;
@@ -266,6 +283,8 @@ margin-bottom: 10px;
     text-decoration: none;
 }
 .footer-list .link {
+    display: inline-block;
+    margin-bottom: 9px;
     color: rgba(255, 255, 255, 0.6);
     font-family: 'Roboto';
     font-style: normal;
@@ -283,10 +302,18 @@ margin-bottom: 10px;
 .footer-list .link:focus {
     color: var(--accent-color);
 }
-
+/* --------------------portfolio----------------- */
 /* ---------------------works------------------- */
+.filter {
+margin-bottom: 50px;
+}
+
 
 .filter-btn {
+display: inline-block;
+border-radius: 4px;
+padding: 6px 22px;
+
 color: var(--secondary-btn-color);
 background-color: var(--general-background-color);
 cursor: pointer;
