@@ -60,7 +60,7 @@ img {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 
 }
 
@@ -78,6 +78,7 @@ img {
 }
 
  .logo {
+
         color: var(--title-text-color);
         font-family: 'Raleway', sans-serif;
         font-weight: 700;
@@ -89,14 +90,26 @@ img {
  .span-logo {
     color: var(--accent-color); 
  }
+
+ 
  /* -------------------nav-------------------- */
+
 
  .flex {
      display: flex;
+     align-items: center;
+     
+ }
+ .main-nav {
+     display: flex;
+    align-items: center;
+    
+    
  }
  
  .site-nav {
      display: flex;
+     margin-left: 93px;
  }
   
 
@@ -123,6 +136,7 @@ img {
 
  .site-contact {
      display: flex;
+     margin-left: auto;
  }
 
  .site-contact .item + .item {
@@ -217,8 +231,20 @@ color: var(--accent-color);
 .no-padding {
     padding-bottom: 0;
 }
+.feature-list {
+    display: flex;
+    margin-left: -30px;
+    margin-top: -30px;
+}
 
- .feature-list .title {
+.feature-list .item {
+    flex-basis: calc(100%/4 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+    }
+ 
+ 
+.feature-list .title {
     margin-bottom: 10px;
 
     color: var(--title-text-color);
@@ -235,6 +261,20 @@ color: var(--accent-color);
 }
 
      /*-----------------     section -----------------    */
+      /* ---------about--------- */
+.about {
+    display: flex;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+
+.about .item {
+   flex-basis: calc(100%/3 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+
 
 .section-title {
     margin-bottom: 50px;
@@ -245,6 +285,9 @@ color: var(--accent-color);
     text-align: center;
     letter-spacing: 0.03em;
 }
+
+
+/* --------------team---------------- */
 .team {
     background-color: var(--general-background-color);
 }
@@ -263,8 +306,20 @@ color: var(--accent-color);
 
 .team-item .title {
 margin-bottom: 10px;
-
 }
+ .team-list {
+     display: flex;
+    margin-left: -30px;
+    margin-top: -30px;
+ }
+
+ .team-list .team-item {
+     flex-basis: calc(100%/4 - 30px);
+     margin-left: 30px;
+     margin-top: 30px;
+ }
+
+
 
 
 .team-list .title {
@@ -286,12 +341,14 @@ margin-bottom: 10px;
     padding-top: 60px;
     padding-bottom: 60px;
 }
-.logo {
-display: inline-block;
-margin-bottom: 20px;
 
+.logo-footer {
+    display: inline-block;
+    margin-bottom: 20px;
+    text-decoration: none;
 }
-.footer .logo {
+
+.footer .logo-footer {
     color: var(--primary-white-color);
 }
 .link-address {
@@ -327,9 +384,14 @@ margin-bottom: 20px;
     color: var(--accent-color);
 }
 /* --------------------portfolio----------------- */
-/* ---------------------works------------------- */
+/* ---------------------filter------------------- */
 .filter {
-margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.filter .item:not(:last-child) {
+    margin-right: 8px;
 }
 
 
@@ -356,6 +418,7 @@ border: none;
     color: var(--primary-white-color);
     background-color: var(--accent-color);
 }
+/* --------------works----------------- */
 
 .works-list {
     display: flex;
@@ -367,7 +430,7 @@ border: none;
 }
 
 .works-list .works-item {
-    flex-basis: calc(100%/3 - 20px);
+    flex-basis: calc(100%/3 - 30px);
     margin-left: 30px;
     margin-top: 30px;
 }
