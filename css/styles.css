@@ -51,7 +51,7 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
-    border-radius: 0px;
+    /* border-radius: 0px; */
 }
 
 
@@ -70,11 +70,7 @@ img {
 
 .header {
     background-color: var(--primary-white-color);
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: #ECECEC;
-    padding-top: 24px;
-    padding-bottom: 25px;
+    border-bottom:1px solid #ECECEC;
 }
 
  .logo {
@@ -98,6 +94,7 @@ img {
  .flex {
      display: flex;
      align-items: center;
+     
      
  }
  .main-nav {
@@ -181,6 +178,7 @@ color: var(--accent-color);
 
 
 .hero-title {
+    margin: 40px auto 0 auto;
     margin-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
@@ -214,7 +212,7 @@ color: var(--accent-color);
     line-height: 1.88;
     letter-spacing: 0.06em;
     border: none;
-    text-align: center;
+   
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -228,9 +226,7 @@ color: var(--accent-color);
     padding-top: 94px;
     padding-bottom: 94px;
 } 
-.no-padding {
-    padding-bottom: 0;
-}
+
 .feature-list {
     display: flex;
     margin-left: -30px;
@@ -262,7 +258,12 @@ color: var(--accent-color);
 
      /*-----------------     section -----------------    */
       /* ---------about--------- */
-.about {
+
+        .no-padding {
+        padding-top: 0;
+    } 
+
+      .about {
     display: flex;
     margin-left: -30px;
     margin-top: -30px;
@@ -345,27 +346,20 @@ margin-bottom: 10px;
 .logo-footer {
     display: inline-block;
     margin-bottom: 20px;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
     text-decoration: none;
 }
 
 .footer .logo-footer {
     color: var(--primary-white-color);
 }
-.link-address {
-    display: inline-block;
-    margin-bottom: 9px;
-    color: var(--primary-white-color);
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    text-decoration: none;
-}
+
 .footer-list .link {
     display: inline-block;
     margin-bottom: 9px;
+
     color: rgba(255, 255, 255, 0.6);
     font-family: 'Roboto';
     font-style: normal;
@@ -375,6 +369,26 @@ margin-bottom: 10px;
     letter-spacing: 0.03em;
     text-decoration: none;
 }
+
+.link-address {
+    display: inline-block;
+    margin-bottom: 9px;  
+
+    color: var(--primary-white-color);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-decoration: none; 
+}
+
+.no-margin.link {
+    margin-bottom: 0;
+}
+ 
+
 .link-address:hover,
 .link-address:focus {
     color: var(--accent-color);
